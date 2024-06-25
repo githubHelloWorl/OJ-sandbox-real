@@ -14,7 +14,6 @@ import java.util.List;
 public class ExecuteCodeResponse {
 
     private List<String> outputList;
-
     /**
      * 接口信息
      */

@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class JavaDockerCodeSandbox extends JavaCodeSandboxTemplate {
 
-    private static final long TIME_OUT = 5000L;
+    private static final long TIME_OUT = 10L;
 
     private static final Boolean FIRST_INIT = true;
 
@@ -79,7 +79,6 @@ public class JavaDockerCodeSandbox extends JavaCodeSandboxTemplate {
         System.out.println("下载完成");
 
         // 创建容器
-
         CreateContainerCmd containerCmd = dockerClient.createContainerCmd(image);
         HostConfig hostConfig = new HostConfig();
         hostConfig.withMemory(100 * 1000 * 1000L);
