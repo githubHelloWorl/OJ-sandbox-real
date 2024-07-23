@@ -37,8 +37,7 @@ public class GaddDockerCodeSandbox extends GaddCodeSandboxTemplate {
         ExecuteCodeRequest executeCodeRequest = new ExecuteCodeRequest();
         executeCodeRequest.setInputList(Arrays.asList("1 5", "1 3", "8 -6", "0 0"));
         String code = ResourceUtil.readStr("testCode/simpleComputeGadd/test.cpp", StandardCharsets.UTF_8);
-//        String code = ResourceUtil.readStr("testCode/unsafeCode/RunFileError.java", StandardCharsets.UTF_8);
-//        String code = ResourceUtil.readStr("testCode/simpleCompute/Main.java", StandardCharsets.UTF_8);
+
         executeCodeRequest.setCode(code);
         executeCodeRequest.setLanguage("c++");
         ExecuteCodeResponse executeCodeResponse = gaddDockerCodeSandbox.executeCode(executeCodeRequest);
