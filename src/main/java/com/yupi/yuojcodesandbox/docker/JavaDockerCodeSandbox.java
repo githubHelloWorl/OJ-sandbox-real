@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class JavaDockerCodeSandbox extends JavaCodeSandboxTemplate {
 
-    private static final long TIME_OUT = 10L;
+    private static final long TIME_OUT = 15L;
 
     private static final Boolean FIRST_INIT = true;
 
